@@ -40,11 +40,11 @@ def fahrenheit_to_celsius(fahrenheit):
 convert_to_celsius = True
 
 
-print("Probe\tThermistor" + ("\tCelsius" if convert_to_celsius else ""))
+print("{:<10} {:<12} {:<10}".format("Probe", "Thermistor", "Celsius" if convert_to_celsius else ""))
 for probe_value in range(lowest_value_to_extrapolate, highest_value_to_extrapolate + 1):
     predicted_thermistor_value = model.predict([[probe_value]])[0]
     if convert_to_celsius:
         celsius_value = fahrenheit_to_celsius(probe_value)
-        print(f"{probe_value}\t{int(round(predicted_thermistor_value))}\t{celsius_value:.1f}")
+        print("{:<10} {:<12} {:.1f}".format(probe_value, int(round(predicted_thermistor_value)), celsius_value))
     else:
-        print(f"{probe_value}\t{int(round(predicted_thermistor_value))}")
+        print("{:<10} {:<12}".format(probe_value, int(round(predicted_thermistor_value))))
