@@ -38,6 +38,28 @@ Since I prefer to read the temperatures in Celsius, I added a conversion to Cels
 - Option to specify the range for extrapolation
 - Fahrenheit to Celsius conversion (optional)
 
+## Getting Started
+
+If you're new to Python, here's a quick guide to get you started with this script:
+
+1. **Install Python**: If you don't have Python installed on your system, download and install it from [python.org](https://www.python.org/downloads/).
+
+2. **Install Required Libraries**: Open your command prompt or terminal and run the following command to install the required libraries:
+   ```bash
+   pip install scikit-learn
+   ```
+
+3. **Download the Script**: Download the [main.py](https://github.com/Dteyn/ThermistorProbeExtrapolate/blob/master/main.py) script file from this repository.
+
+4. **Edit the Script**: Open the script in a text editor like Notepad or a code editor like [Thonny](https://thonny.org/). You can edit the data points and other settings as described in the "Usage" section below.
+
+5. **Run the Script**: Open your command prompt or terminal, navigate to the folder where the script is located, and run the following command:
+   ```bash
+   python main.py
+   ```
+6. **View the Output**: The script will print a table of values to the command prompt or terminal. You can copy and paste this output into a document for easy reference.
+
+
 ## Usage
 
 1. Edit the `data` variable to include your known data points. Format is: (Probe, Thermistor).
